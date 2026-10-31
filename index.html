@@ -48,6 +48,12 @@
 #services .tile::after{background:linear-gradient(90deg,rgba(248,250,252,.99) 0%,rgba(248,250,252,.96) 36%,rgba(248,250,252,.75) 53%,rgba(248,250,252,0) 83%)}
 #services .tile h3,#services .tile p{max-width:58%;color:#14263c;text-shadow:0 1px 1px #fff}
 }
+
+/* Accessible contact action buttons: override white link color on white backgrounds */
+.contact a.button{background:#ffffff;color:#14263c;font-weight:700;border:2px solid #ffffff;line-height:1.4;text-align:center;white-space:normal}
+.contact a.button:hover,.contact a.button:focus-visible{background:#e7eef5;color:#10243b;border-color:#e7eef5}
+.contact a.button:focus-visible{outline:3px solid #88b9ed;outline-offset:3px}
+@media(max-width:750px){.contact a.button{padding:13px 15px;font-size:15px}}
 </style>
 </head>
 <body>
