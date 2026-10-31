@@ -38,6 +38,16 @@
 #services .tile h3,#services .tile p{max-width:62%}
 #services .tile p{font-size:14px}
 }
+
+/* Final readability pass: clearer photos and legible copy */
+#services .tile::before{left:32%;filter:contrast(1.08) saturate(1.08)}
+#services .tile::after{background:linear-gradient(90deg,rgba(248,250,252,.98) 0%,rgba(248,250,252,.96) 31%,rgba(248,250,252,.70) 43%,rgba(248,250,252,0) 60%)}
+#services .tile h3,#services .tile p{position:relative;z-index:2;max-width:42%;color:#14263c;text-shadow:0 1px 1px rgba(255,255,255,.6)}
+@media(max-width:750px){
+#services .tile::before{left:30%}
+#services .tile::after{background:linear-gradient(90deg,rgba(248,250,252,.99) 0%,rgba(248,250,252,.96) 36%,rgba(248,250,252,.75) 53%,rgba(248,250,252,0) 83%)}
+#services .tile h3,#services .tile p{max-width:58%;color:#14263c;text-shadow:0 1px 1px #fff}
+}
 </style>
 </head>
 <body>
