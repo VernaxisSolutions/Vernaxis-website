@@ -25,6 +25,19 @@
 #services .tile h3{font-size:clamp(23px,3vw,31px);line-height:1.18;max-width:520px;margin:0 0 13px;color:#14263c}
 #services .tile p{max-width:520px;font-size:16px;line-height:1.55;margin:0;color:#35495a}
 @media(max-width:750px){#services .tile{min-height:230px;padding:30px 22px}#services .tile::after{background:linear-gradient(90deg,rgba(248,250,251,.84) 0%,rgba(248,250,251,.52) 52%,rgba(248,250,251,0) 100%)}}
+
+/* Clearly visible service imagery: solid text area, unobstructed photo area */
+#services .tile{background:#f7f9fb;min-height:260px}
+#services .tile::before{left:42%;right:0;background-position:center center;filter:none;opacity:1}
+#services .tile::after{background:linear-gradient(90deg,#f7f9fb 0%,#f7f9fb 37%,rgba(247,249,251,.96) 43%,rgba(247,249,251,.32) 52%,rgba(247,249,251,0) 62%)}
+#services .tile h3,#services .tile p{max-width:42%}
+@media(max-width:750px){
+#services .tile{min-height:275px}
+#services .tile::before{left:35%;background-position:center center}
+#services .tile::after{background:linear-gradient(90deg,#f7f9fb 0%,rgba(247,249,251,.96) 29%,rgba(247,249,251,.72) 44%,rgba(247,249,251,0) 75%)}
+#services .tile h3,#services .tile p{max-width:62%}
+#services .tile p{font-size:14px}
+}
 </style>
 </head>
 <body>
